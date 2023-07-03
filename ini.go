@@ -30,7 +30,7 @@ const (
 var (
 	// DefaultSection is the name of default section. You can use this var or the string literal.
 	// In most of cases, an empty string is all you need to access the section.
-	DefaultSection = "DEFAULT"
+	DefaultSection = "default"
 
 	// LineBreak is the delimiter to determine or compose a new line.
 	// This variable will be changed to "\r\n" automatically on Windows at package init time.
