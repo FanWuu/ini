@@ -361,7 +361,7 @@ func (f *File) writeToBuffer(indent string) (*bytes.Buffer, error) {
 			}
 		}
 
-		if i > 0 || DefaultHeader || (i == 0 && strings.ToUpper(sec.name) != DefaultSection) {
+		if i > 0 || DefaultHeader || (i == 0 && strings.ToLower(sec.name) != DefaultSection) {
 			if _, err := buf.WriteString("[" + sname + "]" + LineBreak); err != nil {
 				return nil, err
 			}
